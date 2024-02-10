@@ -1,0 +1,84 @@
+<!-- *** Lo primero que debes hacer es FORKEAR este documento *** -->
+<!-- *** si tenéis dos veces abierto el mismo proyecto no se refrescará y dará problemas *** -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Mi página de contacto</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- Aquí tu código -->
+    <header>
+      <h1>Mi primera página web</h1>
+
+      Un formulario en otra sección, o si te atreves en otra página, sobre lo
+      que quieras dividido por secciones con los siguientes elementos: Fieldset
+      Legend Label Input tipo email Input tipo text Input tipo checkbox Select
+      Textarea Botones para enviar y borrar todo
+
+      <nav>
+        <ul>
+          <li><a href="/#rankings">Rankings</a></li>
+          <li><a href="/#aficiones">Aficiones</a></li>
+          <li><a href="/#imagenes">Imágenes</a></li>
+          <li><a href="form.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Contacto</h2>
+
+      <form action="#">
+        <fieldset>
+          <legend>Información Personal</legend>
+
+          <ol>
+            <li>
+              <label for="name">Nombre:</label>
+              <input name="name" id="name" type="text" />
+            </li>
+            <li>
+              <label for="surname">Apellidos:</label>
+              <input name="surname" id="surname" type="text" />
+            </li>
+            <li>
+              <label for="email">Email:</label>
+              <input name="email" id="email" type="text" />
+            </li>
+          </ol>
+        </fieldset>
+
+        <fieldset>
+          <ol>
+            <li>
+              <label for="subject">Asunto:</label>
+              <select name="subject" id="subject">
+                <option value="0">Selecciona el motivo del contacto</option>
+                <option value="soporte">Soporte</option>
+                <option value="cv">CV</option>
+              </select>
+            </li>
+
+            <li>
+              <label for="message">Mensaje:</label>
+              <textarea name="message" id="message"></textarea>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="message-with-copy" />
+                Marca para recibir una copia del mensaje enviado</label
+              >
+            </li>
+          </ol>
+        </fieldset>
+
+        <input type="submit" value="Enviar" />
+        <input type="reset" />
+      </form>
+    </section>
+  </body>
+</html>
